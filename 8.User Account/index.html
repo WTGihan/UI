@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Action Menu</title>
+</head>
+<body>
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+            <img src="wolflogo.jpg">
+        </div>
+        <div class="menu">
+            <h3>Someone Famous <br><span>Wesit Designer</span></h3>
+            <ul>
+                <li><img src="1.jpg"><a href="#">My Profile</a></li>
+                <li><img src="1.jpg"><a href="#">Edit Profile</a></li>
+                <li><img src="1.jpg"><a href="#">Inbox</a></li>
+                <li><img src="1.jpg"><a href="#">Settings</a></li>
+                <li><img src="1.jpg"><a href="#">Help</a></li>
+                <li><img src="1.jpg"><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
